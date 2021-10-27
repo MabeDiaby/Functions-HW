@@ -90,32 +90,32 @@
 
 // > => 9
 
-function maxOfThree (num1, num2, num3) {
-    if (num1 == num2 && num2 == num3 && num1 == num3){
-            return num1
-    } if (num1 > num2){
-        if (num1 > num3){
-            return num1;
-        }
-    } if (num2 >num1) {
-        if (num2 > num3){
-            return num2
-        }
-    } if (num1 == num2) {
-        if (num1 > num3) {
-            return num1
-        }
-    } if (num2 == num3 ) {
-        if(num2 > num1) {
-            return num2
-        }
-    } if (num3 == num1 ) {
-        if(num3 > num2) {
-            return num3
-        }
-    }
-}
-console.log(maxOfThree(6, 9, 1));
+// function maxOfThree (num1, num2, num3) {
+//     if (num1 == num2 && num2 == num3 && num1 == num3){
+//             return num1
+//     } if (num1 > num2){
+//         if (num1 > num3){
+//             return num1;
+//         }
+//     } if (num2 >num1) {
+//         if (num2 > num3){
+//             return num2
+//         }
+//     } if (num1 == num2) {
+//         if (num1 > num3) {
+//             return num1
+//         }
+//     } if (num2 == num3 ) {
+//         if(num2 > num1) {
+//             return num2
+//         }
+//     } if (num3 == num1 ) {
+//         if(num3 > num2) {
+//             return num3
+//         }
+//     }
+// }
+// console.log(maxOfThree(6, 9, 1));
 
 // # 6
 // ## Print Longest Word
@@ -128,6 +128,15 @@ console.log(maxOfThree(6, 9, 1));
 
 // > => "Peanutbutter"
 
+function printLongestWord(arrOfString) {
+    newArr = []
+    for (let i = 0; i<arrOfString.length; i++){
+            newArr.push(arrOfString[i].length)
+        }
+        return arrOfString[newArr.indexOf(Math.max(...newArr))]
+    }
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // # 7
 // ## Transmogrify the Numbers
