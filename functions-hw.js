@@ -227,14 +227,14 @@
 
 // `"found the needle at position 5"`
 
-var haystack = (['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
-function findNeedle(){
-    for (i=0; i<haystack.length; i++)
-    if (haystack[i]==="needle") {
-    return `found the needle at postition ${haystack.indexOf('needle')} `
-}
-}
-console.log(findNeedle())
+// var haystack = (['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+// function findNeedle(){
+//     for (i=0; i<haystack.length; i++)
+//     if (haystack[i]==="needle") {
+//     return `found the needle at postition ${haystack.indexOf('needle')} `
+// }
+// }
+// console.log(findNeedle())
 
 // # 10 
 // ## Sum the Positive
@@ -252,3 +252,16 @@ console.log(findNeedle())
 // ## Finish this morning's lab if you haven't yet.
 
 // [Join CodeWars](www.codewars.com/r/bEqEeQ) and find your own challenges to solve! Find a great one? Share it in slack!
+
+var arr = [1, -4, 7, 12]
+
+function evenNums(){
+    sum = 0
+    for (i=0; i<arr.length; i++){
+        if ( arr[i] > 0) {
+            sum += arr[i]
+    }
+} return sum
+}
+
+console.log(evenNums())
