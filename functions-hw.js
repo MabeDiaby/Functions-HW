@@ -19,6 +19,10 @@
 
 // > => 125
 
+function calculateCube (a) {
+    return a**3
+}
+console.log(calculateCube(5))
 
 // # 2
 // ## Is a Vowel?
@@ -30,10 +34,6 @@
 
 // > => true
 
-function calculateCube (a) {
-    return a**3
-}
-console.log(calculateCube(5))
 
 // # 3
 // ## Get Two Lengths
