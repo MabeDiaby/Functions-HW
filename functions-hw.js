@@ -128,15 +128,15 @@
 
 // > => "Peanutbutter"
 
-function printLongestWord(arrOfString) {
-    newArr = []
-    for (let i = 0; i<arrOfString.length; i++){
-            newArr.push(arrOfString[i].length)
-        }
-        return arrOfString[newArr.indexOf(Math.max(...newArr))]
-    }
+// function printLongestWord(arrOfString) {
+//     newArr = []
+//     for (let i = 0; i<arrOfString.length; i++){
+//             newArr.push(arrOfString[i].length)
+//         }
+//         return arrOfString[newArr.indexOf(Math.max(...newArr))]
+//     }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // # 7
 // ## Transmogrify the Numbers
@@ -155,6 +155,12 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 // <br>
 // <hr>
+
+function transmogrify (num1, num2, num3) {
+    return ((num1 * num2)** num3)
+}
+
+console.log(transmogrify(5, 3, 2));
 
 // # 8
 // ## Project Euler Problem 2
