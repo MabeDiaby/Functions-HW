@@ -70,15 +70,15 @@
 
 // > => [5, 4, 2, 2, 4]
 
-function getMultipleLengths (arr1) {
-    arrHolder = []
+// function getMultipleLengths (arr1) {
+//     arrHolder = []
 
-    for (i=0; i<arr1.length; i++) {
-        arrHolder.push(arr1[i].length)
-    }
-    return arrHolder
-}
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+//     for (i=0; i<arr1.length; i++) {
+//         arrHolder.push(arr1[i].length)
+//     }
+//     return arrHolder
+// }
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 // # 5
 // ## Maximum of Three Numbers
@@ -90,6 +90,32 @@ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 // > => 9
 
+function maxOfThree (num1, num2, num3) {
+    if (num1 == num2 && num2 == num3 && num1 == num3){
+            return num1
+    } if (num1 > num2){
+        if (num1 > num3){
+            return num1;
+        }
+    } if (num2 >num1) {
+        if (num2 > num3){
+            return num2
+        }
+    } if (num1 == num2) {
+        if (num1 > num3) {
+            return num1
+        }
+    } if (num2 == num3 ) {
+        if(num2 > num1) {
+            return num2
+        }
+    } if (num3 == num1 ) {
+        if(num3 > num2) {
+            return num3
+        }
+    }
+}
+console.log(maxOfThree(6, 9, 1));
 
 // # 6
 // ## Print Longest Word
