@@ -34,16 +34,16 @@
 
 // > => true
 
-function isAVowel (v) {
-    if (v=="a"|| v== "e" || v=="i"|| v=="o"|| v=="u"|| v=="A"|| v=="E"|| v=="I"|| v=="O"|| v=="U") {
-        return true
-    } else {
-        return false
-    }
-}
-console.log(isAVowel("O"))
+// function isAVowel (v) {
+//     if (v=="a"|| v== "e" || v=="i"|| v=="o"|| v=="u"|| v=="A"|| v=="E"|| v=="I"|| v=="O"|| v=="U") {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(isAVowel("O"))
 
-// # 3
+/// # 3
 // ## Get Two Lengths
 // Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
 
@@ -53,6 +53,10 @@ console.log(isAVowel("O"))
 
 // > => [4, 13]
 
+function getTwoLengths(string1, string2) {
+    return [string1.length, string2.length]
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // # 4 
 // ## Get Multiple Lengths
