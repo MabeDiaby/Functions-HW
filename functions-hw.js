@@ -184,27 +184,27 @@
 //return summed value of array
 
 
-let evenNum
+// let evenNum
 
-function fibSec(a){
-    let b = 0
-    let c = 1
-    let arr = []
-    var sum = 0
+// function fibSec(a){
+//     let b = 0
+//     let c = 1
+//     let arr = []
+//     var sum = 0
 
-    for (i=1; i<a; i++){
-        let sumAll = b + c
-        b = c
-        c = sumAll 
-        sum += sumAll
-        console.log(sumAll);
-        if ( sumAll % 2 === 0 && sumAll < 4000000) {
-            arr.push(sumAll)
-        } 
-    } console.log(arr);
-    return sum
-} 
-console.log(fibSec(10));
+//     for (i=1; i<a; i++){
+//         let sumAll = b + c
+//         b = c
+//         c = sumAll 
+//         sum += sumAll
+//         console.log(sumAll);
+//         if ( sumAll % 2 === 0 && sumAll < 4000000) {
+//             arr.push(sumAll)
+//         } 
+//     } console.log(arr);
+//     return sum
+// } 
+// console.log(fibSec(10));
 
 // # 9
 // ## A Needle in the Haystack
@@ -226,6 +226,15 @@ console.log(fibSec(10));
 // Should return:
 
 // `"found the needle at position 5"`
+
+var haystack = (['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+function findNeedle(){
+    for (i=0; i<haystack.length; i++)
+    if (haystack[i]==="needle") {
+    return `found the needle at postition ${haystack.indexOf('needle')} `
+}
+}
+console.log(findNeedle())
 
 // # 10 
 // ## Sum the Positive
