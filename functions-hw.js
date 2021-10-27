@@ -156,11 +156,11 @@
 // <br>
 // <hr>
 
-function transmogrify (num1, num2, num3) {
-    return ((num1 * num2)** num3)
-}
+// function transmogrify (num1, num2, num3) {
+//     return ((num1 * num2)** num3)
+// }
 
-console.log(transmogrify(5, 3, 2));
+// console.log(transmogrify(5, 3, 2));
 
 // # 8
 // ## Project Euler Problem 2
@@ -173,6 +173,38 @@ console.log(transmogrify(5, 3, 2));
 // * Adjust the function to return the summed value of the array.
 
 // * Find the sum of the even numbered values that do not exceed four million.
+
+//writing a function 
+// create an array called fib
+// create sum to hold next number in  fib sequ.
+// b and c are the first two numbers of the sequ.
+// input fib numbers into array
+// get sum of th value of the array
+
+//return summed value of array
+
+
+let evenNum
+
+function fibSec(a){
+    let b = 0
+    let c = 1
+    let arr = []
+    var sum = 0
+
+    for (i=1; i<a; i++){
+        let sumAll = b + c
+        b = c
+        c = sumAll 
+        sum += sumAll
+        console.log(sumAll);
+        if ( sumAll % 2 === 0 && sumAll < 4000000) {
+            arr.push(sumAll)
+        } 
+    } console.log(arr);
+    return sum
+} 
+console.log(fibSec(10));
 
 // # 9
 // ## A Needle in the Haystack
