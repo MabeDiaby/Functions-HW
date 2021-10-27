@@ -53,10 +53,10 @@
 
 // > => [4, 13]
 
-function getTwoLengths(string1, string2) {
-    return [string1.length, string2.length]
-}
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+// function getTwoLengths(string1, string2) {
+//     return [string1.length, string2.length]
+// }
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // # 4 
 // ## Get Multiple Lengths
@@ -70,6 +70,15 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // > => [5, 4, 2, 2, 4]
 
+function getMultipleLengths (arr1) {
+    arrHolder = []
+
+    for (i=0; i<arr1.length; i++) {
+        arrHolder.push(arr1[i].length)
+    }
+    return arrHolder
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 // # 5
 // ## Maximum of Three Numbers
