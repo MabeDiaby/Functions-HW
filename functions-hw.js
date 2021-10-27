@@ -19,10 +19,10 @@
 
 // > => 125
 
-function calculateCube (a) {
-    return a**3
-}
-console.log(calculateCube(5))
+// function calculateCube (a) {
+//     return a**3
+// }
+// console.log(calculateCube(5))
 
 // # 2
 // ## Is a Vowel?
@@ -34,6 +34,14 @@ console.log(calculateCube(5))
 
 // > => true
 
+function isAVowel (v) {
+    if (v=="a"|| v== "e" || v=="i"|| v=="o"|| v=="u"|| v=="A"|| v=="E"|| v=="I"|| v=="O"|| v=="U") {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isAVowel("O"))
 
 // # 3
 // ## Get Two Lengths
