@@ -19,10 +19,10 @@
 
 // > => 125
 
-// function calculateCube (a) {
-//     return a**3
-// }
-// console.log(calculateCube(5))
+function calculateCube (a) {
+    return a**3
+}
+console.log(calculateCube(5))
 
 // # 2
 // ## Is a Vowel?
@@ -34,14 +34,14 @@
 
 // > => true
 
-// function isAVowel (v) {
-//     if (v=="a"|| v== "e" || v=="i"|| v=="o"|| v=="u"|| v=="A"|| v=="E"|| v=="I"|| v=="O"|| v=="U") {
-//         return true
-//     } else {
-//         return false
-//     }
-// }
-// console.log(isAVowel("O"))
+function isAVowel (v) {
+    if (v=="a"|| v== "e" || v=="i"|| v=="o"|| v=="u"|| v=="A"|| v=="E"|| v=="I"|| v=="O"|| v=="U") {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isAVowel("O"))
 
 /// # 3
 // ## Get Two Lengths
@@ -53,10 +53,10 @@
 
 // > => [4, 13]
 
-// function getTwoLengths(string1, string2) {
-//     return [string1.length, string2.length]
-// }
-// console.log(getTwoLengths("Hank", "Hippopopalous"));
+function getTwoLengths(string1, string2) {
+    return [string1.length, string2.length]
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // # 4 
 // ## Get Multiple Lengths
@@ -70,15 +70,15 @@
 
 // > => [5, 4, 2, 2, 4]
 
-// function getMultipleLengths (arr1) {
-//     arrHolder = []
+function getMultipleLengths (arr1) {
+    arrHolder = []
 
-//     for (i=0; i<arr1.length; i++) {
-//         arrHolder.push(arr1[i].length)
-//     }
-//     return arrHolder
-// }
-// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+    for (i=0; i<arr1.length; i++) {
+        arrHolder.push(arr1[i].length)
+    }
+    return arrHolder
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 // # 5
 // ## Maximum of Three Numbers
@@ -90,32 +90,32 @@
 
 // > => 9
 
-// function maxOfThree (num1, num2, num3) {
-//     if (num1 == num2 && num2 == num3 && num1 == num3){
-//             return num1
-//     } if (num1 > num2){
-//         if (num1 > num3){
-//             return num1;
-//         }
-//     } if (num2 >num1) {
-//         if (num2 > num3){
-//             return num2
-//         }
-//     } if (num1 == num2) {
-//         if (num1 > num3) {
-//             return num1
-//         }
-//     } if (num2 == num3 ) {
-//         if(num2 > num1) {
-//             return num2
-//         }
-//     } if (num3 == num1 ) {
-//         if(num3 > num2) {
-//             return num3
-//         }
-//     }
-// }
-// console.log(maxOfThree(6, 9, 1));
+function maxOfThree (num1, num2, num3) {
+    if (num1 == num2 && num2 == num3 && num1 == num3){
+            return num1
+    } if (num1 > num2){
+        if (num1 > num3){
+            return num1;
+        }
+    } if (num2 >num1) {
+        if (num2 > num3){
+            return num2
+        }
+    } if (num1 == num2) {
+        if (num1 > num3) {
+            return num1
+        }
+    } if (num2 == num3 ) {
+        if(num2 > num1) {
+            return num2
+        }
+    } if (num3 == num1 ) {
+        if(num3 > num2) {
+            return num3
+        }
+    }
+}
+console.log(maxOfThree(6, 9, 1));
 
 // # 6
 // ## Print Longest Word
@@ -128,15 +128,15 @@
 
 // > => "Peanutbutter"
 
-// function printLongestWord(arrOfString) {
-//     newArr = []
-//     for (let i = 0; i<arrOfString.length; i++){
-//             newArr.push(arrOfString[i].length)
-//         }
-//         return arrOfString[newArr.indexOf(Math.max(...newArr))]
-//     }
+function printLongestWord(arrOfString) {
+    newArr = []
+    for (let i = 0; i<arrOfString.length; i++){
+            newArr.push(arrOfString[i].length)
+        }
+        return arrOfString[newArr.indexOf(Math.max(...newArr))]
+    }
 
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // # 7
 // ## Transmogrify the Numbers
@@ -156,11 +156,11 @@
 // <br>
 // <hr>
 
-// function transmogrify (num1, num2, num3) {
-//     return ((num1 * num2)** num3)
-// }
+function transmogrify (num1, num2, num3) {
+    return ((num1 * num2)** num3)
+}
 
-// console.log(transmogrify(5, 3, 2));
+console.log(transmogrify(5, 3, 2));
 
 // # 8
 // ## Project Euler Problem 2
@@ -186,25 +186,25 @@
 
 // let evenNum
 
-// function fibSec(a){
-//     let b = 0
-//     let c = 1
-//     let arr = []
-//     var sum = 0
+function fibSec(a){
+    let b = 0
+    let c = 1
+    let arr = []
+    var sum = 0
 
-//     for (i=1; i<a; i++){
-//         let sumAll = b + c
-//         b = c
-//         c = sumAll 
-//         sum += sumAll
-//         console.log(sumAll);
-//         if ( sumAll % 2 === 0 && sumAll < 4000000) {
-//             arr.push(sumAll)
-//         } 
-//     } console.log(arr);
-//     return sum
-// } 
-// console.log(fibSec(10));
+    for (i=1; i<a; i++){
+        let sumAll = b + c
+        b = c
+        c = sumAll 
+        sum += sumAll
+        console.log(sumAll);
+        if ( sumAll % 2 === 0 && sumAll < 4000000) {
+            arr.push(sumAll)
+        } 
+    } console.log(arr);
+    return sum
+} 
+console.log(fibSec(10));
 
 // # 9
 // ## A Needle in the Haystack
@@ -227,14 +227,14 @@
 
 // `"found the needle at position 5"`
 
-// var haystack = (['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
-// function findNeedle(){
-//     for (i=0; i<haystack.length; i++)
-//     if (haystack[i]==="needle") {
-//     return `found the needle at postition ${haystack.indexOf('needle')} `
-// }
-// }
-// console.log(findNeedle())
+var haystack = (['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+function findNeedle(){
+    for (i=0; i<haystack.length; i++)
+    if (haystack[i]==="needle") {
+    return `found the needle at postition ${haystack.indexOf('needle')} `
+}
+}
+console.log(findNeedle())
 
 // # 10 
 // ## Sum the Positive
